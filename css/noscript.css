@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.tabs__content section {
+  display: block;
+}
+
+.animated {
+  opacity: 1;
+}

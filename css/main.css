@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: 'Roboto Slab', 'Meiryo',"游ゴシック", sans-serif;
+}
+
+.nav-item {
+  margin-left: 30px;
+}
+
+.aus-map {
+  background-image: url(https://www.australia.com/etc.clientlibs/tourismaustralia/clientlibs/resources/images/header/mini-map.svg);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent; 
+  
+}
+
+#top {
+  background-image: url("https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTU3ODc3NjU4MzYzNzY2NDk1%2Fthis-day-in-history-01261788---australia-day.jpg");
+  padding: 90px 0;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.6;
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.top-title {
+  text-align: center;
+  position: absolute;
+  font-weight: normal; 
+  font-size: 2em;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  opacity: 1;
+}
+
+.animated {
+  opacity: 0;
+}
+
+#about {
+  padding-top: 30px;
+}
+
+.container {
+  display: flex;
+}
+
+.flag-img {
+  width: 45%;
+  background-image: url("https://img.icons8.com/color/300/000000/australia-flag--v1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+}
+
+.info {
+  width: 45%;
+  list-style-type:none;
+  padding-top: 30px;
+}
+
+.info ul li {
+  list-style-type:none;
+  margin-bottom: 5px;
+}
+
+.info-title {
+  border-left: 5px solid orange;
+  padding-left: 10px;
+}
+
+
+.showcase {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 940px;
+}
+
+.showcase__details {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 460px;
+}
+
+.showcase__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.showcase__description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.image-gallery {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  max-width: 1024px;
+}
+
+.image-gallery__item {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  border: 8px solid #fff;
+  box-shadow: 4px 4px 6px 1px #ccc;
+  margin-left: 9px;
+  margin-right: 9px;
+  margin-bottom: 18px;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.image-gallery__item:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+#places {
+  padding-top: 82px;
+  padding-bottom: 92px;
+  background-color: #d1edfb;
+}
+
+.japanese-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1.79px;
+}
+
+.eng-title{
+  margin-bottom: 37px;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+#food {
+  padding-top: 82px;
+  padding-bottom: 92px;
+  background-color: #faf7f0;
+}
+
+.prepare {
+  padding-top: 82px;
+  padding-bottom: 44px;
+  background-color: #d1edfb;
+}
+
+.gallery {
+  padding-top: 82px;
+  padding-bottom: 92px;
+  background-color: #faf7f0;
+  background-image: -webkit-linear-gradient(
+    top left,
+    #f0faf2,
+    #f0faf2 50%,
+    #fcecf5 50%,
+    #fcecf5
+  );
+  background-image: linear-gradient(
+    to bottom right,
+    #f0faf2,
+    #f0faf2 50%,
+    #fcecf5 50%,
+    #fcecf5
+  );
+}
+
+footer {
+  padding: 40px 0;
+  background-color: #fafaf3;
+  text-align: center;
+}
+
+
+/* タブ機能 */
+.tabs__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.tabs__menu li {
+  display: inline-block;
+  margin-bottom: 12px;
+  opacity: 0.5;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.tabs__menu a {
+  display: block;
+  color: #557f95;
+  text-decoration: none;
+}
+
+.tabs__menu li:not(.active):hover {
+  opacity: 0.7;
+}
+
+.tabs__menu .active {
+  opacity: 1;
+}
+.tabs__menu .active a {
+  color: #3f4548;
+}
+
+.tabs__content section {
+  display: none;
+}
+
+.tabs__content section.active {
+  display: block;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .eng-title {
+    font-size: 4rem;
+  }
+
+  .japanese-title {
+    font-size: 1.5rem;
+  }
+
+  .image-gallery__item {
+    width: 192px;
+    height: 192px;
+    border: 21px solid #fff;
+    box-shadow: 8px 8px 12px 1px #ccc;
+  }
+
+  .showcase--leftpic .showcase__thumbnails {
+    text-align: left;
+  }
+  .showcase--rightpic .showcase__thumbnails {
+    text-align: right;
+  }
+
+  .showcase--rightpic .showcase__kind-name {
+    text-align: right;
+  }
+
+  .showcase__details {
+    max-width: 320px;
+  }
+  .showcase--leftpic .showcase__details {
+    margin: 0 auto 0 0;
+  }
+  .showcase--rightpic .showcase__details {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: inline;
+  }
+
+  .flag-img {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}
